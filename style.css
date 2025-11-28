@@ -33,57 +33,13 @@ header{
     padding: 0 30px;
     height: 111px;
     .logo{
-        width: 40%;
-        height: 100%;
+        width: 25%;
+        height: auto;
         cursor: pointer;
-    }
-    nav{
-        display: flex;
-        align-items: center;
-        div{
-            cursor: pointer;
-            a{
-                text-decoration: none;
-                color: var(--Darkblue);
-                font-size: 25px;
-                margin-left: 24px;
-            }
-        }
-        div:hover{
-            cursor: pointer;
-            a{
-                color: var(--Yellow);
-            }
-        }
     }
     div{
         display: flex;
         align-items: center;
-        color: var(--Darkblue);
-    }
-    img{
-        width: 50px;
-        height: 50px;
-    }
-    .add{
-        background: var(--Blue_gradient);
-        width: 405px;
-        height: 55px;
-        border-radius: 15px;
-        color: var(--White);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 44px;
-        cursor: pointer;
-        img{
-            width: 30px;
-            height: 30px;
-            margin-right: 5px;
-        }
-    }
-    .add:hover{
-        background: var(--Yellow-gradient);
     }
     .icone_discord{
         margin-right: 17px;
@@ -91,18 +47,14 @@ header{
     .icone_discord, .icone_instagram{
         cursor: pointer;
     }
-    .menu_burger{
-        display: none;
-    }
 }
 
 main{
-    padding-top: 57px;
     .carte{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 57px 95px;
+        padding: 50px;
         .carte_bretagne{
             width: 100%;
             position: relative;
@@ -112,204 +64,114 @@ main{
             cursor: pointer;
         }
         .location_1{
-            bottom: 15%;
+            bottom: -20%;
             left: 50.5%;
         }
         .location_2{
-            top: 50%;
-            left: 58%;
-        }
-        .overlay{
-            background-color: var(--White);
-            border: 3px solid var(--Darkblue);
-            box-shadow: 0 0 10px var(--Darkblue);
-            border-radius: 20px;
-            position: absolute;
-            display: none;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 350px;
-            h3{
-                font-size: 20px;
-                margin-top: 8px;
-                margin-bottom: 5px;
-                font-weight: bold;
-            }
-            h4{
-                font-size: 19px;
-                font-weight: normal;
-                margin-bottom: 8px;
-            }
-            img{
-                width: 100%;
-                border-radius: 15px;
-            }
-        }
-        .overlay_1{
-            bottom: 21%;
-            right: 39%;
-        }
-        .overlay_2{
-            top: 27.5%;
-            right: 31.5%;
-        }
-    }
-
-    .pattern{
-        background-image: url(img/Pattern.png);
-        padding: 30px 120px;
-        color: var(--White);
-        h2{
-            font-size: 40px;
-            margin-bottom: 46px;
-        }
-    }
-    .evenements_liste{
-        padding: 62px 48px 62px 24px;
-        margin-left: 20px;
-        background-color: var(--Blackdiscord);
-        border-radius: 15px;
-        div{
-            display: flex;
-            justify-content: center;
-        }
-        .div4{
-            flex-direction: column;
-            img{
-                width: 100%;
-            }
-            p{
-                margin: 18px 0 18px 24px;
-            }
-        }
-        h3{
-            font-size: 35px;
-            margin-bottom: 32px;
-            font-weight: normal;
-            span{
-                font-weight: bold
-            }
-        }
-        img{
-            margin-left: 24px;
-        }
-        .affiche{
-            width: 60%;
-        }
-        p{
-            font-size: 30px;
-            margin-left: 48px;
-            width: 50%;
-        }
-        .img_espacements{
-            width: 100%;
-            margin: 18px 0;
+            top: 63%;
+            left: 65%;
         }
     }
 }
 
 aside{
-    background-color: grey;
-    width: 300px;
-    height: 870px;
+    background-color: var(--Blackdiscord);
+    width: 380px;
+    height: 978.167px;
     position: absolute;
-    left: -300px;
-    input{
+    left: -380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--White);
+    padding: 0 18px;
+    h2{
+        font-size: 30px;
+        font-weight: 700;
+        color: var(--Overblue);
+    }
+    h3{
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 18px;
+        span{
+            font-weight: 600;
+        }
+    }
+    a{
+        text-decoration: none;
+        margin-top: 18px;
+        color: var(--White);
+        background: var(--Blue_gradient);
+        padding: 10px 15px;
+        width: 314px;
+        text-align: center;
+        border-radius: 7px;
+        font-size: 19px;
+    }
+    a:hover{
+        background: var(--Yellow-gradient);
+    }
+    img{
+        width: 314px;
+        margin-top: 18px;
+    }
+    .button_aside{
         width: 30px;
-        height: 90px;
-        background-color: blue;
+        height: 123px;
+        background-color: var(--Blackdiscord);
+        position: absolute;
+        top: 394px;
+        right: -30px;
+        border-radius: 0 10px 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        img{
+            transform-origin: center;
+            margin-top: 0;
+            width: 30px;
+        }
+    }
+    transition: left 0.3s ease;
+    z-index: 2;
+    input{
+        z-index: 3;
+        width: 30px;
+        height: 123px;
         position: absolute;
         top: 45%;
         right: -30px;
+        display: none;
     }
-    transition: left 0.3s ease;
 }
 
 aside:has(input:checked){
     left: 0;
 }
 
+aside:has(input:checked) .button_aside img{
+    transform: rotate(180deg);
+}
+
 @media screen and (max-width: 1312px) {
     header{
         .logo{
-            width: 40%;
-            height: 40%;
-        }
-        nav{
-            div{
-                a{
-                    font-size: 20px;
-                }
-            }
+            width: 35%;
         }
         img{
             width: 35px;
             height: 35px;
-        }
-        .add{
-            width: 300px;
-            height: 45px;
-            font-size: 15px;
-            img{
-                width: 20px;
-                height: 20px;
-            }
         }
     }
 }
 
 @media screen and (max-width: 1155px){
     header{
+        padding: 0 10px;
         .logo{
-            width: 45%;
-            height: 45%;
-        }
-        nav{
-            display: none;
-        }
-        .add{
-            display: none;
-        }
-        .menu_burger{
-            margin-left: 17px;
-            display: block;
-            input{
-                width: 30px;
-                height: 30px;
-                cursor: pointer;
-                opacity: 0;
-            }
-        }
-    }
-
-    main{
-        .evenements_liste{
-            div{
-                flex-direction: column;
-                align-items: center;
-            }
-            .affiche{
-                width: 100%;
-            }
-            p{
-                width: 100%;
-                text-align: center;
-                margin-left: 0;
-                margin-top: 18px;
-            }
-        }
-        .menu_burger{
-            position: relative;
-            .burger{
-                span{
-                    width: 30px;
-                    height: 1px;
-                    background-color: var(--Darkblue);
-                    position: absolute;
-                    right: -20px;
-                }
-            }
+            width: 70%;
         }
     }
 }
