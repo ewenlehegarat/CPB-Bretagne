@@ -171,7 +171,7 @@ aside{
     flex-direction: column;
     justify-content: center;
     color: var(--White);
-    border-radius: 0 0 15px;
+    border-radius: 0 0 15px 0;
     h2{
         font-size: 30px;
         font-weight: 700;
@@ -313,7 +313,7 @@ aside:has(input:checked) .button_aside img{
         width: 180px;
         left: -180px;
         padding: 25px 15px;
-        border-radius: 8px;
+        border-radius: 0 0 8px 0;
         h2{
             font-size: 12px;
         }
