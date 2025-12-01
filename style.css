@@ -304,11 +304,13 @@ aside:has(input:checked) .button_aside img{
     
     aside{
         width: 180px;
+        left: -180px;
+        padding: 25px 15px;
         h2{
-            font-size: 13px;
+            font-size: 12px;
         }
         h3{
-            font-size: 8px;
+            font-size: 9px;
         }
         .button_aside{
             width: 20px;
@@ -319,6 +321,8 @@ aside:has(input:checked) .button_aside img{
         a{
             width: 100%;
             font-size: 10px;
+            padding: 5px 0;
+            border-radius: 5px;
         }
     }
 }
