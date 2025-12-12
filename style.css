@@ -361,10 +361,21 @@ aside:has(input:checked) .button_aside img{
         .left{
             nav{
                 margin-left: 5px;
+                height: 50px;
                 a{
                     font-size: 10px;
+                    height: 50px;
+                }
+                a::after{
+                    height: 3px;
                 }
             }
+        }
+        .icone_discord{
+            width: 70%;
+        }
+        .icone_instagram{
+            width: 90%;
         }
     }
     aside{
