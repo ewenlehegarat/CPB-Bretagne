@@ -129,9 +129,37 @@ main{
 
 @media screen and (max-width: 411px) {
     header{
+        padding: 0 15px;
         img{
-            width: 80%;
-            height: 80%;
+            width: 70%;
+            height: 70%;
+        }
+        .left{
+            nav{
+                margin-left: 5px;
+                height: 50px;
+                a{
+                    font-size: 10px;
+                    height: 50px;
+                }
+                a::after{
+                    height: 3px;
+                }
+            }
+        }
+        .icone_discord{
+            width: 70%;
+        }
+        .icone_instagram{
+            width: 90%;
+        }
+    }
+    aside{
+        .lien_google_maps{
+            font-size: 10px;
+        }
+        .image_affiche{
+            border-radius: 1px;
         }
     }
 }
