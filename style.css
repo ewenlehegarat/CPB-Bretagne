@@ -378,7 +378,7 @@ aside:has(input:checked) .button_aside img{
             width: 90%;
         }
     }
-    aside{
+    aside{  
         .lien_google_maps{
             font-size: 10px;
         }
